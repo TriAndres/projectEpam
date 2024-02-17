@@ -6,5 +6,8 @@ public abstract class Task {
         this.array = array;
     }
 
+    public Task() {
+    }
+
     public abstract void task();
 }
