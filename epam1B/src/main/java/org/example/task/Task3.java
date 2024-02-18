@@ -17,7 +17,7 @@ public class Task3 extends Task{
         showAction(10, i -> i % 3 == 0);
     }
 
-    public void showAction(int lineLength, Predicate<Integer> predicate) {
+    private void showAction(int lineLength, Predicate<Integer> predicate) {
         int count = 0;
         for (int i = 0; i < array.length; i++) {
             if (predicate.test(array[i])) {

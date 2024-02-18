@@ -79,14 +79,14 @@ public class FactoryTask {
 
     public void task9() {
         int[] num = input();
-        arrayNumber.showArray(num[0],1, 100, 10);
+        arrayNumber.showArray(num[0],100_000, 999_999, 10);
         task = new Task9(arrayNumber.getArray());
         task.task();
     }
 
     public void task10() {
         int[] num = input();
-        arrayNumber.showArray(num[0],1, 100, 10);
+        arrayNumber.showArray(num[0],10, 100, 10);
         task = new Task10(arrayNumber.getArray());
         task.task();
     }
