@@ -30,11 +30,7 @@ public class Task10 extends Task{
                 }
                 if (Integer.toString(array[i]).equals(string)) {
                     count++;
-                    System.out.print(array[i] + "\t");
-                    if (count == lineLength) {
-                        System.out.println();
-                        count = 0;
-                    }
+                    count = show(array[i], count, lineLength);
                 }
             }
         }

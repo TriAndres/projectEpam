@@ -10,7 +10,7 @@ public class Task8 extends Task{
 
     @Override
     public void task() {
-        System.out.println("8. Числа в порядке убывания частоты встречаемости чисел.");
+        System.out.println("\n8. Числа в порядке убывания частоты встречаемости чисел.");
         actionSort();
         actionShow(10);
     }

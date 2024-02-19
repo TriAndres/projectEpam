@@ -22,11 +22,7 @@ public class Task5 extends Task{
             String[] line = Integer.toString(i).split("");
             if (!line[0].equals(line[1]) && !line[1].equals(line[2]) && !line[2].equals(line[0])) {
                 count++;
-                System.out.print(i + "\t");
-                if (count == lineLength) {
-                    System.out.println();
-                    count = 0;
-                }
+                count = show(i, count, lineLength);
             }
         }
     }

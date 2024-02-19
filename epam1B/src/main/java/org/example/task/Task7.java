@@ -38,11 +38,7 @@ public class Task7 extends Task{
         int count = 0;
         for (int i = 0; i < array.length; i++) {
             count++;
-            System.out.print(array[i] + "\t");
-            if (count == lineLength) {
-                System.out.println();
-                count = 0;
-            }
+            count = show(array[i], count, lineLength);
         }
     }
 }

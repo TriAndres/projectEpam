@@ -26,11 +26,7 @@ public class Task6 extends Task{
                 }
                 if (isFlag) {
                     count++;
-                    System.out.print(array[i] + "\t");
-                    if (count == lineLength) {
-                        System.out.println();
-                        count = 0;
-                    }
+                    count = show(array[i], count, lineLength);
                 }
             }
         }

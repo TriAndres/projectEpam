@@ -22,11 +22,7 @@ public class Task3 extends Task{
         for (int i = 0; i < array.length; i++) {
             if (predicate.test(array[i])) {
                 count++;
-                System.out.print(array[i] + "\t");
-                if (count == lineLength) {
-                    System.out.println();
-                    count = 0;
-                }
+                count = show(array[i], count, lineLength);
             }
         }
     }
