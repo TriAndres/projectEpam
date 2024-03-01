@@ -4,12 +4,12 @@ import org.example.model.Numbers;
 
 import java.util.List;
 
-/**
- *1. Найти самое короткое и самое длинное число. Вывести найденные числа
- * и их длину.
+/*
+ 6. Найти число, цифры в котором идут в строгом порядке возрастания. Если
+ таких чисел несколько, найти первое из них.
  */
-public class Task1 extends Task{
-    public Task1(List<Numbers> numberList) {
+public class Task6 extends Task{
+    public Task6(List<Numbers> numberList) {
         super(numberList);
 
     }
@@ -18,6 +18,5 @@ public class Task1 extends Task{
     public void task() {
         System.out.println("\n1. Найти самое короткое и самое длинное число. Вывести найденные числа\n" +
                 "и их длину.");
-
     }
 }

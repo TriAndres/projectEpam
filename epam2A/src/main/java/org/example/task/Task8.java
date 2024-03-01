@@ -8,8 +8,8 @@ import java.util.List;
  *1. Найти самое короткое и самое длинное число. Вывести найденные числа
  * и их длину.
  */
-public class Task1 extends Task{
-    public Task1(List<Numbers> numberList) {
+public class Task8 extends Task{
+    public Task8(List<Numbers> numberList) {
         super(numberList);
 
     }
@@ -18,6 +18,5 @@ public class Task1 extends Task{
     public void task() {
         System.out.println("\n1. Найти самое короткое и самое длинное число. Вывести найденные числа\n" +
                 "и их длину.");
-
     }
 }
