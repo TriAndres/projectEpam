@@ -16,7 +16,7 @@ public class ManageNumber {
     public void addNewNum(Numbers numbers) {
         if (numbers != null) {
             numberList.add(numbers);
-            numbers.setId(numberList.size() + 1);
+            numbers.setId(numberList.size());
         }
     }
 
