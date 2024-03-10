@@ -1,12 +1,17 @@
-package org.example.factory.factorys;
+package org.example.factory;
 
 import org.example.console.ReadConsole;
 import org.example.factory.interfaces.FactoryManageNumbers;
+import org.example.manage.ManageNumber;
 import org.example.model.Numbers;
 
 import java.util.List;
 
 public class FactoryManageNumber extends Factory implements FactoryManageNumbers {
+
+    public FactoryManageNumber(ManageNumber manageNumber) {
+        super(manageNumber);
+    }
 
     public void addNewNum() {
         System.out.println("Введите чмсло:");

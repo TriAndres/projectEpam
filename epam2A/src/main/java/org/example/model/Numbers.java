@@ -5,6 +5,7 @@ import java.util.Objects;
 public class Numbers {
     private int id;
     private int num;
+    private int numLength;
 
     public Numbers(int num) {
         this.num = num;
@@ -30,6 +31,14 @@ public class Numbers {
 
     public void setNum(int num) {
         this.num = num;
+    }
+
+    public int getNumLength() {
+        return numLength;
+    }
+
+    public void setNumLength(int numLength) {
+        this.numLength = numLength;
     }
 
     @Override

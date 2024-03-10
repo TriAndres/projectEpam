@@ -1,9 +1,15 @@
-package org.example.factory.factorys;
+package org.example.factory;
 
 import org.example.factory.interfaces.FactoryTasks;
+import org.example.manage.ManageNumber;
 import org.example.task.*;
 
 public class FactoryTask extends Factory implements FactoryTasks {
+
+    public FactoryTask(ManageNumber manageNumber) {
+        super(manageNumber);
+    }
+
     public void task1() {
         task = new Task1(manageNumber.getNumberList());
         task.task();

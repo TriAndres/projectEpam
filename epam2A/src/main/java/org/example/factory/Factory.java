@@ -1,4 +1,4 @@
-package org.example.factory.factorys;
+package org.example.factory;
 
 import org.example.factory.interfaces.FactoryManageNumbers;
 import org.example.factory.interfaces.FactoryTasks;
@@ -7,10 +7,10 @@ import org.example.task.Task;
 import org.example.task.Task1;
 
 public abstract class Factory implements FactoryManageNumbers, FactoryTasks {
-    protected ManageNumber manageNumber;
     protected Task task;
+    protected ManageNumber manageNumber;
 
-    public Factory() {
-        manageNumber = new ManageNumber();
+    public Factory(ManageNumber manageNumber) {
+        this.manageNumber = manageNumber;
     }
 }

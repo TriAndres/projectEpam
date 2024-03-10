@@ -1,9 +1,9 @@
 package org.example;
 
-import org.example.menu.MenuManageNumber;
+import org.example.menu.MenuMain;
 
 public class App {
     public static void main(String[] args) {
-        new MenuManageNumber().game();
+        new MenuMain().game();
     }
 }
